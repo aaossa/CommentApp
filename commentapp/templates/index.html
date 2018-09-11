@@ -1,0 +1,5 @@
+<form method="POST" action="{{ url_for('create_comment') }}">
+    {{ form.csrf_token }}
+    <div class="form-group">{{ form.body.label }} {{ form.body(size=140, class="form-control") }}</div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
